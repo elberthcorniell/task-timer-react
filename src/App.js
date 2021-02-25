@@ -1,8 +1,17 @@
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Login from './containers/Login';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hi everyone</h1>
-    </div>
+    <BrowserRouter>
+      <div className="container">
+        <Switch>
+          <Route exact path="/app" component={() => <>Hello</>} />
+          <Route path='/login' component={Login} />
+          <Route component={Login} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
