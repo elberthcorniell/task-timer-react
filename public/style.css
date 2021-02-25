@@ -1,0 +1,53 @@
+body {
+  background-color: #f3f3f3;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  min-height: calc(100vh - 40px);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form > input {
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #a1a1a1;
+    padding: 0 15px;
+}
+
+.login-form > input::placeholder {
+    color: #a1a1a1;
+    font-weight: bold;
+}
+
+.login-form > input[type="submit"] {
+    background-color: blue;
+    color: white;
+    border-width: 0;
+} 
+
+.error {
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.3);
+    color: red;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.error.btn {
+    display: flex;
+    justify-content: space-between;
+}
